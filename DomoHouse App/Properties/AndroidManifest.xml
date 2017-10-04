@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="Domo.House" android:installLocation="auto" android:versionCode="1" android:versionName="1.0">
+	<uses-sdk android:minSdkVersion="15" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+	<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<application android:label="DomoHouse" android:icon="@drawable/Logo"></application>
+	<AndroidKeyStore>True</AndroidKeyStore>
+	<AndroidSigningKeyStore>C:\Program Files (x86)\Java\jdk1.7.0_55\bin\mica.keystore</AndroidSigningKeyStore>
+	<AndroidSigningStorePass>amandayguitarra1</AndroidSigningStorePass>
+	<AndroidSigningKeyAlias>Arturo Salas Delgado</AndroidSigningKeyAlias>
+	<AndroidSigningKeyPass>amandayguitarra1</AndroidSigningKeyPass>
+</manifest>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item
+       android:id="@+id/menuInvitaciones"
+       android:icon="@drawable/invitaciones"
+       android:showAsAction="ifRoom"
+       android:title="Invitaciones" />
+  <item
+       android:id="@+id/menuCrear"
+       android:icon="@drawable/crear"
+       android:showAsAction="ifRoom"
+       android:title="Crear" />
+  <item
+       android:id="@+id/menuYo"
+       android:icon="@drawable/silueta_blanca"
+       android:showAsAction="ifRoom"
+       android:title="Yo" />
+</menu>

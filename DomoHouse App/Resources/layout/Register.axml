@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/background_light"
+    android:weightSum="100"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <TextView
+        android:id="@+id/textCreateAccount"
+        android:text="Mica"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_weight="25"
+        android:layout_height="0dp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="50sp" />
+    <Button
+        android:id="@+id/btnSignInFacebook"
+        android:text="Registrarse con facebook"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="13"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="60dp"
+        android:textSize="15sp"
+        android:background="@drawable/ButtonSignStyle"
+        android:textColor="#000000"
+        android:drawableLeft="@drawable/facebook" />
+    <Button
+        android:id="@+id/btnSignInGmail"
+        android:text="Registrarse con gmail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="13"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="0dp"
+        android:textSize="15sp"
+        android:background="@drawable/ButtonSignStyle"
+        android:textColor="#000000"
+        android:drawableLeft="@drawable/google" />
+    <Button
+        android:id="@+id/btnEmailRegister"
+        android:text="Registrarse con correo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="13"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="0dp"
+        android:textSize="15sp"
+        android:background="@drawable/ButtonSignStyle"
+        android:textColor="#000000" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <ProgressBar
+            android:id="@+id/progressBarSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:background="@drawable/ProgressBarStyle" />
+    </RelativeLayout>
+</LinearLayout>

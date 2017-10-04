@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="100"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="@android:color/background_light">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="100dp">
+        <ImageView
+            android:id="@+id/imageViewEmail"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/agenda"
+            android:scaleType="fitCenter" />
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/txtNameRegister"
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:layout_height="35dp"
+        android:background="@drawable/EditTextStyle"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="0dp"
+        android:hint="Nombre completo"
+        android:paddingLeft="10dp"
+        android:textColor="#ffffff" />
+    <EditText
+        android:id="@+id/txtPassRegister"
+        android:layout_below="@id/txtNameRegister"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:layout_height="35dp"
+        android:background="@drawable/EditTextStyle"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Contraseña"
+        android:paddingLeft="10dp"
+        android:textColor="#ffffff" />
+    <Button
+        android:id="@+id/btnNextRegisterInfo"
+        android:text="Finalizar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="13"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:background="@drawable/ButtonSignStyle" />
+    <TextView
+        android:id="@+id/txtInfoError"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_weight="6"
+        android:layout_height="0dp"
+        android:textColor="#FE0000"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="13sp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <ProgressBar
+            android:id="@+id/progressBarEmailSignIn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:background="@drawable/ProgressBarStyle" />
+    </RelativeLayout>
+</LinearLayout>
